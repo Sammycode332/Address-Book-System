@@ -5,9 +5,9 @@ class Contact{
     private _email: string;
 
     constructor(name: string, phone:string, email:string){
-        this._name= name
-        this._phone = phone
-        this._email = email
+        this._name= name;
+        this._phone = phone;
+        this._email = email; 
     }
 
     //Getter for name
@@ -38,12 +38,12 @@ class Contact{
             this._email = newEmail
         }
         else{
-            console.error("Invalid Phone number. it should be at least seven different characters")
+            console.error("Invalid Email")
         }
         }
     // a method to display contact info
     public displayInfo(): void{
-        console.log(`Name:${this._name} | Phone: ${this._phone}`)
+        console.log(`Name:${this._name} | Phone: ${this._phone} | Email:${this.email}`)
     }
 }
 
@@ -93,5 +93,4 @@ class AddressBook{
             console.log("Contacts not found")
         }
     }
-    
 }
